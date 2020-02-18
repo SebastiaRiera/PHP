@@ -38,8 +38,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
-</head><body>
-
+</head>
+<body>
+<a href='formtipus_lloc.php'><button type='button' class='btn btn-dark'><i class='fa fa-plus' aria-hidden='true'></i> Insertar</button></a>
 <table id='tl' class='table table-striped table-bordered' style='width:100%'>
 		<thead>
 			<tr><th>ID</th><th>Nom</th><th>Editar</th><th>Borrar</th></tr>
@@ -56,8 +57,8 @@ while($row = mysqli_fetch_array($rs)){
 	echo "<tr>";
 	echo "<td>".$row['id']."</td>";
 	echo "<td>".$row['nom']."</td>";
-	echo "<td><a href='editarhotel.php?id=".$row['id']."'><button type='button' class='btn btn-warning'><i class='fa fa-pencil' aria-hidden='true'></i> Editar</button></a></td>";
-	echo "<td><a href='borrarhotel.php?id=".$row['id']."'><button type='button' class='btn btn-danger'><i class='fa fa-trash' aria-hidden='true'></i> Borrar</button></a></td>";
+	echo "<td><a href='editartipus_lloc.php?id=".$row['id']."'><button type='button' class='btn btn-warning'><i class='fa fa-pencil' aria-hidden='true'></i> Editar</button></a></td>";
+	echo "<td><a href='borrartipus_lloc.php?id=".$row['id']."'><button type='button' class='btn btn-danger'><i class='fa fa-trash' aria-hidden='true'></i> Borrar</button></a></td>";
 	echo "</tr>";
 }
 require('close.php');
