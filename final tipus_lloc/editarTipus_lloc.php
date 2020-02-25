@@ -10,12 +10,21 @@
 ?>
 
 
-<h2>Editar tipus_lloc</h2>
-<form action="editaTipus_lloc.php" method="post">
-	<input type="hidden" name="id"  value="<?php echo $row['id']; ?>">
-Nom: <input type="text" name="nom" value="<?php echo $row['nom']; ?>">
-<input type="submit" name="Update">
-</form>
+<div class="container">
+	
+<div class="alert alert-primary mt-3" role="alert">
+	<h3 class="text center">Editar tipus_lloc</h3>
+</div>
+
+	<form action="editaTipus_lloc.php" method="post">
+		<div class="form-group">
+			<input type="hidden" name="id"  value="<?php echo $row['id']; ?>">
+			Nom: <input type="text" name="nom" value="<?php echo $row['nom']; ?>">
+			<input type="submit" name="Update" class="btn btn-primary">
+		</div>
+	</form>
+</div>
+
 <?php
  	include("footer.php");
 ?>

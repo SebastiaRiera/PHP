@@ -1,6 +1,7 @@
 <?php
  	include("cap.php");
 ?>
+<h2>TIPUS_LLOC</h2>
 <a href='insertarTipus_lloc.php'><button type='button' class='btn btn-dark'><i class='fa fa-plus' aria-hidden='true'></i> Insertar</button></a>
 <table id='tl' class='table table-striped table-bordered' style='width:100%'>
 		<thead>
